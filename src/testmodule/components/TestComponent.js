@@ -1,6 +1,7 @@
 import Button from "@mui/material/Button";
 import { useSelector, useDispatch } from "react-redux";
 import { selectCount } from "../redux/testSlice";
+import { initiateIncrement } from "../redux/testSlice";
 
 function TestComponent() {
   const dispatch = useDispatch();
@@ -9,10 +10,7 @@ function TestComponent() {
   console.log("iam from test component");
   return (
     <div className="App">
-      <Button
-        variant="contained"
-        onClick={() => dispatch({ type: "TEST_INCREMENT" })}
-      >
+      <Button variant="contained" onClick={() => dispatch(initiateIncrement())}>
         Hello World
       </Button>
       <br />
