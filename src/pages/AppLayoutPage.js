@@ -15,15 +15,15 @@ const AppLayoutPage = () => {
         gap: 1,
       }}
     >
-      <Box sx={{ border: "2px dashed grey", gridArea: "header" }}>
+      <Box sx={{ gridArea: "header" }}>
         <AppHeader />
       </Box>
       <Box
-        sx={{ border: "2px dashed grey", gridArea: "content", height: "75vh" }}
+        sx={{ border: "2px dashed grey", gridArea: "content", height: "80vh" }}
       >
         <Outlet />
       </Box>
-      <Box sx={{ border: "2px dashed grey", gridArea: "footer" }}>
+      <Box sx={{ gridArea: "footer" }}>
         <AppFooter />
       </Box>
     </Box>
