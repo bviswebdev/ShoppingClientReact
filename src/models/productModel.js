@@ -1,19 +1,22 @@
+import Category from "./categoryModel";
+import FileInfo from "./fileInfoModel";
+
 class Product {
   constructor(
-    _id,
-    code,
-    name,
-    brand,
-    description,
-    unitPrice,
-    quantity,
-    productImage,
-    isActive,
-    category,
-    supplierId,
-    purchases,
-    views,
-    imageUrl
+    _id = "",
+    code = "",
+    name = "",
+    brand = "",
+    description = "",
+    unitPrice = 0.0,
+    quantity = 0,
+    productImage = new FileInfo(),
+    isActive = false,
+    category = new Category(),
+    supplierId = "",
+    purchases = 0,
+    views = 0,
+    imageUrl = ""
   ) {
     this._id = id;
     this.code = code;

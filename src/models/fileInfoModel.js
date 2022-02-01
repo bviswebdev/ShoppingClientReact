@@ -1,5 +1,12 @@
 class FileInfo {
-  constructor(_id, fileName, fileType, fileSize, fileUrl, fileSource) {
+  constructor(
+    _id = "",
+    fileName = "",
+    fileType = "",
+    fileSize = "",
+    fileUrl = "",
+    fileSource = ""
+  ) {
     this._id = id;
     this.fileName = fileName;
     this.fileType = fileType;

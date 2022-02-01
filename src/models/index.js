@@ -1,3 +1,5 @@
 import Product from "./productModel";
+import Category from "./categoryModel";
+import FileInfo from "./fileInfoModel";
 
-export { Product };
+export { Product, Category, FileInfo };
